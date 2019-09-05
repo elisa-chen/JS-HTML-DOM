@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <title>Exercise 11</title>
+    <script>
+        const username = prompt('please enter your username');
+        const password = prompt('please enter your password');
+            if (username === 'Elisa' && password === '123') {
+                alert(`welcome ${username}`);
+            } else {
+                alert(`your username or password is incorrect`);
+            }
+
+        let timeOut = setTimeout(function() {
+            let message = confirm('Do you still want to be logged?')
+            if (message == true) {
+                alert(`${username}, your session has been restored`);
+            } else {
+                alert(`${username}, your session has expired`)
+            }
+            }, 10000);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
