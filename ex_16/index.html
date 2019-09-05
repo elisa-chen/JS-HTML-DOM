@@ -3,8 +3,13 @@
 <head>
   <title>Attributes</title>
   <script>
-      const firstElement = document.querySelector('body > a');
-      console.log(firstElement);
+      window.onload = function() {
+      const element = document.querySelector('body > a');
+      const classValue = element.getAttribute('class');
+      const href = element.getAttribute('href');
+      console.log(href);
+      console.log(classValue);
+      }
   </script>
   <style>
     a {
