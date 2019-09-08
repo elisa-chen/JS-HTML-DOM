@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>It's all JavaScript Baby!!</title>
+    <script>
+        window.onload = function() {
+            const body = document.querySelector('body');
+            const femaleSuperheroes = ['catwoman', 'supergirl', 'wonderwoman', 'scarlett witch', 'black widow', 'rogue', 'phoenix', 'storm', 'black canary', 'starfire'];
+            const unorderedList = document.createElement('ul');
+
+            femaleSuperheroes.forEach(function(femaleSuperheroe) {
+                let list = document.createElement('li');
+                list.innerText = femaleSuperheroe;
+                unorderedList.appendChild(list);
+            });
+
+            body.appendChild(unorderedList);
+           
+        }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
