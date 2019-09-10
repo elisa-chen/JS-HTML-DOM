@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 41</title>
+    <script>
+        window.onload = function() {
+            const body = document.querySelector('body');
+            const unorderedList = document.createElement('ul');
+            const weeklyChores = ['study the DOM', 'mown the lawn', 'cancel equifax account', 'do laundry', 'projects meeting', 'cook lunch', 'trip to Costco', 'massage appointment', 'return pants', 'water plants'];
+           
+            weeklyChores.forEach(function(weeklyChore) {
+                let list = document.createElement('li');
+                list.addEventListener('click', function() {
+                    list.classList.toggle('striked');
+                });
+                list.innerText = weeklyChore;
+                unorderedList.appendChild(list);
+            });
+                body.appendChild(unorderedList);
+                
+                
+        }
+    </script>
+    <style>
+        .striked {
+            text-decoration: line-through;
+            text-decoration-color: red;
+        }
+
+        li {
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+  </body>
+</html>

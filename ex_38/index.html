@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+    <script>
+        window.onload = function() {
+            const output = addEventListener('keypress', function(event) {
+              const div = document.querySelector('div');
+              const keyCode = event.charCode;
+              const key = String.fromCharCode(keyCode);   
+            div.innerText = `${keyCode} & ${key}`;
+        });
+        }
+    </script>
+  </head>
+  <body>
+    <div>
+    </div>
+    <button id="firstButton">Click Me!!</button>
+    <button id="secondButton">Remove event listener</button>
+    <a href="https://google.com">Link with JavaScript handler</a>
+  </body>
+</html>

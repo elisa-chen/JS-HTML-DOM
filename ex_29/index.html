@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Products</title>
+    <script>
+        window.onload = function() {
+            const ul = document.querySelector('ul');
+            const firstItem = ul.children.item(0);
+            const secondItem = ul.children.item(1);
+            const thirdItem = ul.children.item(2);
+            const fourthItem = ul.children.item(3);
+            const fifthItem = ul.children.item(4);
+            const sixthItem = ul.children.item(5);
+            const seventhItem = ul.children.item(6);
+
+            ul.removeChild(firstItem);
+            ul.removeChild(secondItem);
+            ul.removeChild(thirdItem);
+            ul.removeChild(fourthItem);
+            ul.removeChild(fifthItem);
+            ul.removeChild(sixthItem);
+            ul.removeChild(seventhItem);
+            
+            console.log(ul);
+        }
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li>Bannana</li>
+      <li>Apple</li>
+      <li>Peach</li>
+      <li>Eggs</li>
+      <li>Tomatto</li>
+      <li>Lettuce</li>
+      <li>Milk</li>
+    </ul>
+  </body>
+</html>

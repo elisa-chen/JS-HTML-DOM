@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+    <script>
+        window.onload = function() {
+            const firstButton = document.getElementById('firstbutton');
+            firstButton.onclick = function() {
+                alert('Oh.. Don\'t Click Me!!');
+            }
+            const secondButton = document.getElementById('secondbutton');
+            const handleClickEvent = function() {
+                alert('I told you not to click me!!');
+            }
+            secondButton.onclick = handleClickEvent;
+        }
+    </script>
+  </head>
+  <body>
+    <div></div>
+    <button id="firstbutton">Click me!!</button>
+    <button id="secondbutton">Click me again!!</button>
+  </body>
+</html>

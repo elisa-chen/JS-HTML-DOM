@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+    <script>
+        window.onload = function() {
+            const firstButton = document.querySelector('#firstbutton');
+            firstButton.addEventListener('click', function() {
+              alert('You clicked an event listened element');
+
+            //     message = prompt('type pink');
+            //     if (message === 'pink') {
+            //         document.body.style.backgroundColor = 'pink';
+            //     } else {
+            //         alert('I told you to type pink!');
+            //     }
+            // });
+            });
+        }
+    </script>
+  </head>
+  <body>
+    <button id="firstbutton">Click me to receive a surprise!!</button>
+    <button id="secondbutton">Remove event listener</button>
+    <a href="https://google.com">Link with JavaScript handler</a>
+  </body>
+</html>
+
